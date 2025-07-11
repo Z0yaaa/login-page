@@ -5,10 +5,60 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
+    
+    <div class="container" id = "container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Accoount</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Sign up with your email</span>
+                <input type="text" name="Name" id="name" placeholder="Name" required>
+                <input type="email" name="Email" id="email" placeholder="Email" required>
+                <input type="password" name="Password" id="password" placeholder="Password">
+                <button class="sign-up-button">Sign up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>Sign in with your email</span>
+                <input type="text" name="Email" id="email" placeholder="Email" required>
+                <input type="password" name="Password" id="password" placeholder="Password" required>
+                <a href="#">Forgot your password?</a>
+                <button class="sign-in-button">Sign in</button>
+            </form>
+        </div>
 
-
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Log in to continue using your account and stay in touch</p>
+                    <button class="ghost sign-in-button" id="signin">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friends!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost sign-up-button" id="signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
     <script src="script.js"></script>
 </body>
